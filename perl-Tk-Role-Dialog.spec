@@ -1,5 +1,5 @@
 %define upstream_name    Tk-Role-Dialog
-%define upstream_version 1.101390
+%define upstream_version 1.101480
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -63,5 +63,3 @@ rm -rf %buildroot
 %doc Changes LICENSE META.yml README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
