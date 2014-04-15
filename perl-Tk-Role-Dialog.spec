@@ -27,6 +27,7 @@ BuildRequires:	perl(Tk::JPEG)
 BuildRequires:	perl(Tk::PNG)
 BuildRequires:	perl(Tk::Sugar)
 BuildRequires:	perl(Module::Build)
+BuildRequires:	perl(namespace::autoclean)
 
 BuildArch:	noarch
 
@@ -59,18 +60,3 @@ perl Build.PL installdirs=vendor
 %doc Changes LICENSE META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 1.101.480-2mdv2011.0
-+ Revision: 658555
-- rebuild for updated spec-helper
-
-* Tue Jul 13 2010 Jérôme Quelin <jquelin@mandriva.org> 1.101.480-1mdv2011.0
-+ Revision: 551925
-- adding missing buildrequires:
-- update to 1.101480
-- import perl-Tk-Role-Dialog
-
-
-* Wed May 19 2010 cpan2dist 1.101381-1mdv
-- initial mdv release, generated with cpan2dist
