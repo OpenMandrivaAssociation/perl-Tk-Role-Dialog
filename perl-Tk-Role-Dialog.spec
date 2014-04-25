@@ -1,11 +1,12 @@
 %define upstream_name    Tk-Role-Dialog
-%define upstream_version 1.101480
+%define upstream_version 1.112380
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Moose role for enhanced tk dialogs
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -60,3 +61,4 @@ perl Build.PL installdirs=vendor
 %doc Changes LICENSE META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
