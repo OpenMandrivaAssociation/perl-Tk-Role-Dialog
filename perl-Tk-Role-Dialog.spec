@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Tk::Role::HasWidgets)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(English)
 BuildRequires:	perl(File::Find)
