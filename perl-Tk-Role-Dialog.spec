@@ -1,15 +1,15 @@
 %define upstream_name    Tk-Role-Dialog
-%define upstream_version 1.101480
+%define upstream_version 1.112380
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Moose role for enhanced tk dialogs
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/jquelin/tk-role-dialog
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Tk-Role-Dialog-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
