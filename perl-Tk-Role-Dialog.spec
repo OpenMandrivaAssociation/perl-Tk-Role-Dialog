@@ -1,15 +1,13 @@
 %define upstream_name    Tk-Role-Dialog
-%define upstream_version 1.112380
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.112380
+Release:	2
 
 Summary:	Moose role for enhanced tk dialogs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/jquelin/tk-role-dialog
-Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Tk-Role-Dialog-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Tk-Role-Dialog-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -44,7 +42,7 @@ only mandatory attribute is 'parent', but you'd better provide some other
 attributes if you want your dialog to be somehow usable! :-)
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
